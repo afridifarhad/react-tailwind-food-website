@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '/public/logo.jpg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +9,12 @@ const Navbar = () => {
   };
 
   return (
+    <> 
     <nav className="bg-gray-500 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold">
-          MyWebsite
+      <div className="container mx-auto flex justify-between items-center ml-19">
+        <div className="text-white text-xl font-bold flex items-center">
+          <img src={logo} alt=""  className='w-16 h-12 flex ml-20 space-3 px-1 py-1   rounded-lg' />
+          wowfood
         </div>
         <div className="md:hidden">
           <button
@@ -58,6 +61,16 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+
+
+
+
+
+
+
+
+</>
+
   );
 };
 
