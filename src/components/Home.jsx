@@ -23,6 +23,32 @@ function Home() {
             
         }
     ]
+    const menuCards = [
+      {
+        id: 1,
+        name: "Pizza",
+        price: "600",
+        imgURL: "https://images.pexels.com/photos/19239118/pexels-photo-19239118/free-photo-of-fresh-pepperoni-sausage-pizza.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        id: 2,
+        name: "Pasta",
+        price: "400",
+        imgURL: "https://images.pexels.com/photos/24869092/pexels-photo-24869092/free-photo-of-a-plate-of-pasta-with-mushrooms-and-wine.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        id: 3,
+        name: "K2 Burgur",
+        price: "580",
+        imgURL: "https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        id: 4,
+        name: "Foodies",
+        price: "230",
+        imgURL: "https://images.pexels.com/photos/8471703/pexels-photo-8471703.jpeg?auto=compress&cs=tinysrgb&w=600"
+      }
+    ]
   return (
     <div>
       <section className="relative">
@@ -57,14 +83,15 @@ function Home() {
         </div>
      </section>
 
-        <section className="mx-auto">
+        <section className="mx-auto mt-10">
           <h2 className="text-center font-bold text-2xl">Food Menu</h2>
        
-       <div className="flex flex-wrap justify-around">
-        <MenuCards /> 
-         <MenuCards /> 
-          <MenuCards />
-          <MenuCards />
+       <div className="flex flex-wrap justify-around mt-10 gap-4">
+        {
+          menuCards.map((item) => (
+            <MenuCards key={item.id} name={item.name} price={item.price} image={item.imgURL} />
+           ) )
+        }
           </div>
           </section>
     </div>
