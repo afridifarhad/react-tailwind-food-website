@@ -1,5 +1,6 @@
 import React from "react";
 import FoodCards from "./FoodCards";
+import MenuCards from "./MenuCards";
 
 function Home() {
     const foodCards = [
@@ -56,7 +57,12 @@ function Home() {
         </div>
      </section>
 
-
+        <section className="mx-auto">
+          <h2 className="text-center font-bold text-2xl">Food Menu</h2>
+        </section>
+        <section>
+          <MenuCards />
+        </section>
 
     </div>
   );

@@ -1,9 +1,7 @@
 
 import './App.css'
 import Home from './components/Home'
-// import ExploreFood from './components/ExploreFood'
 import Navbar from './components/Navbar'
-// import Search from './components/Search'
 
 function App() {
   
@@ -12,8 +10,6 @@ function App() {
     <>
      <Navbar />
      <Home />
-     {/* <Search /> */}
-     {/* <ExploreFood /> */}
     </>
   )
 }
