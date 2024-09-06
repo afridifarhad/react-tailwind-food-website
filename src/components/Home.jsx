@@ -59,11 +59,14 @@ function Home() {
 
         <section className="mx-auto">
           <h2 className="text-center font-bold text-2xl">Food Menu</h2>
-        </section>
-        <section>
+       
+       <div className="flex flex-wrap justify-around">
+        <MenuCards /> 
+         <MenuCards /> 
           <MenuCards />
-        </section>
-
+          <MenuCards />
+          </div>
+          </section>
     </div>
   );
 }
