@@ -53,7 +53,7 @@ function Home() {
     <div>
       <section className="relative">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhtvijk6diUl5BkJkq5jAEW2bsiQ0LyM4Zm25fSJS2UtmHp6hscBQY_U6YgUev9DzTXQ&usqp=CAU"
+          src="https://images.pexels.com/photos/16350426/pexels-photo-16350426/free-photo-of-a-knife-and-a-cabbage-on-a-cutting-board.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
           className="h-[80vh] w-full object-cover "
         />
@@ -61,9 +61,9 @@ function Home() {
         <div className="absolute top-[50%] left-[10%] translate-x-[50%] translate-y-[50%]">
             <div className="flex gap-1">
                 <input type="text" placeholder="Search..." 
-                className="px-4 py-2 w-[35vw] focus:outline-none border border-gray-600 rounded-lg"
+                className=" border-none px-4 py-2 w-[35vw] focus:outline-none rounded-lg"
                 />
-                <button className="py-2 px-4 text-white bg-pink-400 rounded-md">Search</button>
+                <button className="py-2 px-4 text-white  bg-pink-600 hover:bg-pink-700 rounded-md">Search</button>
             </div>
         </div>
       </section>
@@ -71,7 +71,7 @@ function Home() {
 
 
      <section className="w-[100vw] flex flex-col justify-center items-center p-5">
-        <h2 className="text-3xl font-bold text-gray-700 mb-8 ">
+        <h2 className="text-3xl font-bold text-gray-700 mb-8 text-pink-600">
             Explore Food
         </h2>
         <div className="w-full flex items-center justify-center gap-10">
@@ -84,7 +84,7 @@ function Home() {
      </section>
 
         <section className="mx-auto mt-10">
-          <h2 className="text-center font-bold text-2xl">Food Menu</h2>
+          <h2 className="text-center font-bold text-2xl text-pink-600">Food Menu</h2>
        
        <div className="flex flex-wrap justify-around mt-10 gap-4">
         {

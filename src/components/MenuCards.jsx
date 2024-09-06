@@ -12,7 +12,7 @@ function MenuCards({name, price, image}) {
         <span className="text-gray950 text-lg font-semibold">{name}</span>
         <span className="">Rs.{price}</span>
         <p>This is a brief description of the product.</p>
-      <button className="py-2 w-32 px-2 text-white bg-pink-400 rounded-md">Order Now</button>
+      <button className="py-2 w-32 px-2 text-white bg-pink-400 hover:bg-pink-700 rounded-md ">Order Now</button>
       </div>
     </div>
 
